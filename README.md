@@ -1,24 +1,7 @@
-# README
+# Flickr Widget ApplicationController
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Flickr Widget is a minimalist app that allows the user to search Flickr's database to view users' photostreams.
 
-Things you may want to cover:
+This project is primarily intended to demonstrate proficiency with using foreign APIs securely.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project was created according to the specifications of [The Odin Project's curriculum](https://www.theodinproject.com/lessons/apis).
