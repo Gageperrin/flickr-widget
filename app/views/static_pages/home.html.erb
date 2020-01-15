@@ -2,9 +2,9 @@
 
 	<h1>Flickr Widget</h1>
 	<p>Enter a <a href="https://www.pixsy.com/academy/flickr-id/">user's Flickr ID to see their photostream.</a></p>
-
+	<p>Example: "186518659@N08"
 	<%= form_tag('/', method: :get) do %>
-  <%= label_tag 'Enter ID here (try 186518659@N08):   ' %>
+  <%= label_tag 'Enter ID here:   ' %>
   <%= text_field_tag :user_id %>
 	<br>
 	<br>
