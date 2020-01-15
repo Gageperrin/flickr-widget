@@ -1,0 +1,33 @@
+<div class="center jumbotron">
+
+	<h1>Flickr Widget</h1>
+	<p>Enter a user's Flickr ID to see their photostream.</p>
+	<p>Give <strong>186518659@N08</strong> a try.</p>
+
+	<%= form_tag('/', method: :get) do %>
+  <%= label_tag 'Search By ID' %>
+  <br>
+  <%= text_field_tag :user_id %>
+  <%= submit_tag 'Load Photos', class: "btn btn-lg btn-primary" %>
+<% end %>
+
+
+</div>
+
+
+
+<% if !params[:user_id].blank? %>
+
+
+	<h1><%= @user_id.username %> 's Photos </h1>
+
+
+
+		<% @photos.each do |photo| %>
+			<% info = flickr.photos.getInfo(:photo_id => photo.id) %>
+			<%= link_to image_tag(FlickRaw.url_m(info)), FlickRaw.url_b(info) %>
+		<% end  %>
+
+
+
+<% end %>
